@@ -1,0 +1,21 @@
+<workspace xmlns:xi="http://www.w3.org/2001/XInclude">
+	<prjgroup name="libchip">
+		<project description="libchip/libchip/libchip.xml"/>
+	</prjgroup>
+	<prjgroup name="libboard">
+		<project description="libboard/libboard/libboard.xml"/>
+	</prjgroup>
+	<prjgroup name="usbd_rom">
+		<project description="usbd_rom/usbd_rom_bwtest/usbd_rom_bwtest.xml"/>
+		<project description="usbd_rom/usbd_rom_cdc_uart/usbd_rom_cdc_uart.xml"/>
+		<project description="usbd_rom/usbd_rom_cdc_vcom/usbd_rom_cdc_vcom.xml"/>
+		<project description="usbd_rom/usbd_rom_dfu_composite/usbd_rom_dfu_composite.xml"/>
+		<project description="usbd_rom/usbd_rom_hid_generic/usbd_rom_hid_generic.xml"/>
+		<project description="usbd_rom/usbd_rom_hid_keyboard/usbd_rom_hid_keyboard.xml"/>
+		<project description="usbd_rom/usbd_rom_hid_mouse/usbd_rom_hid_mouse.xml"/>
+		<project description="usbd_rom/usbd_rom_hid_sio/usbd_rom_hid_sio.xml"/>
+		<project description="usbd_rom/usbd_rom_libusb/usbd_rom_libusb.xml"/>
+		<project description="usbd_rom/usbd_rom_msc_ram/usbd_rom_msc_ram.xml"/>
+	</prjgroup>
+</workspace>
+

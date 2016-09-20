@@ -1,0 +1,10 @@
+--cpu Cortex-M4.fp
+".\keil_output\sysinit.o"
+".\keil_output\systick.o"
+".\keil_output\keil_startup_lpc18xx43xx.o"
+"..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\keil_output\core_m4\lib_lpc_chip_43xx.lib"
+"..\..\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\keil_output\core_m4\lib_lpc_board_nxp_lpclink2_4370.lib"
+--strict --scatter ".\keil_output\periph_systick.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\keil_output\periph_systick.map" -o .\keil_output\periph_systick.axf

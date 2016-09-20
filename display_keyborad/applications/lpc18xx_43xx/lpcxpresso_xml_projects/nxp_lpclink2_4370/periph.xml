@@ -1,0 +1,32 @@
+<workspace xmlns:xi="http://www.w3.org/2001/XInclude">
+	<prjgroup name="libchip">
+		<project description="libchip/libchip/libchip.xml"/>
+	</prjgroup>
+	<prjgroup name="libboard">
+		<project description="libboard/libboard/libboard.xml"/>
+	</prjgroup>
+	<prjgroup name="periph">
+		<project description="periph/periph_atimer/periph_atimer.xml"/>
+		<project description="periph/periph_blinky/periph_blinky.xml"/>
+		<project description="periph/periph_ccan/periph_ccan.xml"/>
+		<project description="periph/periph_dac/periph_dac.xml"/>
+		<project description="periph/periph_dma_timertrig/periph_dma_timertrig.xml"/>
+		<project description="periph/periph_flashiap/periph_flashiap.xml"/>
+		<project description="periph/periph_grouped_int/periph_grouped_int.xml"/>
+		<project description="periph/periph_hsadc/periph_hsadc.xml"/>
+		<project description="periph/periph_i2c/periph_i2c.xml"/>
+		<project description="periph/periph_i2cm_interrupt/periph_i2cm_interrupt.xml"/>
+		<project description="periph/periph_i2cm_polling/periph_i2cm_polling.xml"/>
+		<project description="periph/periph_pinint/periph_pinint.xml"/>
+		<project description="periph/periph_ritimer/periph_ritimer.xml"/>
+		<project description="periph/periph_rtc/periph_rtc.xml"/>
+		<project description="periph/periph_sct_pwm/periph_sct_pwm.xml"/>
+		<project description="periph/periph_ssp/periph_ssp.xml"/>
+		<project description="periph/periph_systick/periph_systick.xml"/>
+		<project description="periph/periph_timers/periph_timers.xml"/>
+		<project description="periph/periph_uart/periph_uart.xml"/>
+		<project description="periph/periph_uart_rb/periph_uart_rb.xml"/>
+		<project description="periph/periph_watchdog/periph_watchdog.xml"/>
+	</prjgroup>
+</workspace>
+

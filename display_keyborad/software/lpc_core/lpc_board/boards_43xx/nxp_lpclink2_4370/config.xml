@@ -1,0 +1,11 @@
+<LPCOpenCfg>
+	<symbol name="varMemCfgEnable"      value="${varExampleFullName}" options="default"/>
+	<symbol name="varExampleMemCfgDir"  value="${prjDestToRoot}/${prjExampleBaseDir}/tool_configs/lpcxpresso_memory_xml" options="default"/>
+	<symbol name="varMemTarget"         value="spifi" options="default"/>
+	<symbol name="varExampleMemCfgFile" value="mem_${varMemTarget}_${prjChipName}.xml" options="default"/>
+	<symbol name="prjIgnoreList"        value="periph/periph_memtest|${prjIgnoreList}"/>
+
+	<template section="cfglist" name="${varMemCfgEnable}" tool="xpresso">
+		<memoryConfiguration href="${varExampleMemCfgDir}/${varExampleMemCfgFile}"/>
+	</template>
+</LPCOpenCfg>
