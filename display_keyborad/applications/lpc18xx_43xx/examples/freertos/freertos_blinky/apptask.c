@@ -17,7 +17,7 @@
 #include "Oled_driver.h"
 extern uint8_t heartcnt;
 
-
+//#define HAVE_KEY_DEAL			//有按键处理
 /*****************************************************************************
  * 函 数 名  : KBD_dev_init
  * 负 责 人  : MZM
@@ -293,7 +293,10 @@ static void display_key_menu_task(void *pvParameters)
 		{
 		
 			//test_key_oled(key_value);//测试按键
+
+#ifdef HAVE_KEY_DEAL
 			keyoperation(key_value);
+#endif
 
 //			key_value += '0';
 //			uart_send_data("KEY[",4);
@@ -338,14 +341,14 @@ void Key_Board_task_create(uint16_t StackDepth, uint8_t Priority)
 
 void v10msTask(void *pvParameters) 
 {
-	uint32_t lasttick;
+	uint32_t lasttick,testsct=0;
 	uint32_t flg10ms,flg500ms,flg1000ms,flg2500ms,flg5000ms;
 	//TRC_COM_P pcom_data;
 	bool LedState = false;
 
 	lasttick=xTaskGetTickCount();
 	flg10ms=0;
-	
+	RTU_PWMDev_Init();
 	rt_kprintf(DEBUG_SYS,"FUNCTION:	[%s()]-	Tick[%d] \r\n",__FUNCTION__,lasttick);
 	while (1)
 	{
@@ -353,28 +356,40 @@ void v10msTask(void *pvParameters)
 		{
 			flg10ms++;
 			lasttick=xTaskGetTickCount();
-
+#ifdef USED_SSD2119
 			flg500ms =(flg10ms %5==0)?1:0;
 			flg1000ms =(flg10ms %10==0)?1:0;
 			flg5000ms =(flg10ms %50==0)?1:0;
+#else
+			flg500ms =(flg10ms %3==0)?1:0;
+			flg1000ms =(flg10ms %5==0)?1:0;
+			flg5000ms =(flg10ms %50==0)?1:0;
+
+#endif
 			if(flg500ms)
 			{
 				flg500ms = 0;
 				heartcnt++;
-//				test_draw_heart(heartcnt);
+#ifndef USED_SSD2119
+				test_draw_heart(heartcnt);
+#endif
 //				test_ssd2119(lasttick);
 				xSemaphoreGive(refresh_LCD_sem);// 500ms 刷新一次
 			}
 			if(flg1000ms)
 			{
 				//do_1000ms_task();
-				rt_kprintf(DEBUG_SYS,"FUNCTION: 1S \r\n");
+				rt_kprintf(DEBUG_SYS,"FUNCTION: 1S[%d] \r\n",(testsct*10)%100);
 				flg1000ms=0;
-				 
-				 Board_LED_Set(LED_WARN, LedState);
-				 Board_LED_Set(LED_TX, LedState);
-				 Board_LED_Set(LED_RX, LedState);
-//				task_draw_net_icon(LedState);
+				 testsct ++;
+//				 sctpwm(1,(testsct*10)%100);
+//				 Board_LED_Set(LED_WARN, LedState);
+//				 Board_LED_Set(LED_TX, LedState);
+//				 Board_LED_Set(LED_RX, LedState);
+#ifndef USED_SSD2119
+
+				task_draw_net_icon(LedState);
+#endif
 //				task_draw_msc_icon(LedState);
 //				task_draw_db_icon(LedState);
 //				xSemaphoreGive(refresh_LCD_sem);// 500ms 刷新一次
@@ -472,7 +487,19 @@ void check_user_cmd(TRC_COM_P pcom_data,uint8_t *tmpbuf,uint32_t len)
 				else{
 					Set_Debug_Level(atoi(&tmpbuf[j+6]));
 					}
-				
+//				Set_back_light(atoi(&tmpbuf[j+6])；
+			}
+		/*背光亮度调节，从0-99 分别代表最暗和最亮*/
+		if(tmpbuf[j]=='B'
+			&&tmpbuf[j+1]=='L'
+			&&tmpbuf[j+2]==':')
+			{
+//				Set_back_light(0);
+//				Set_back_light(atoi(&tmpbuf[j+3]));
+//				sctpwm(1,Get_back_light());
+
+				sctpwm(1,atoi(&tmpbuf[j+3])%100);
+
 			}
 #ifdef  TESTFORJJJ 	//为金晶晶调试射频做的扩展命令---正式版本要去掉
 		else 
@@ -862,10 +889,10 @@ void AppTaskCreate(void)
 {
 	KB_OLED_App_init();						//按键设备初始化
 	OLED_refresh_task_create(256,0);		//创建刷新液晶任务
-	Task_Create_10ms(128,2);				//10 ms 任务创建
-	Key_Board_task_create(256,2);			//按键和显示 相关任务
-	Task_Create_Uart0_Server(256,1);		// 串口服务程序
-	Task_Create_Com_Protocol(256,1);		//协议解析处理程序
+	Task_Create_10ms(256,2);				//10 ms 任务创建
+	Key_Board_task_create(512,2);			//按键和显示 相关任务
+	Task_Create_Uart0_Server(512,1);		// 串口服务程序
+	Task_Create_Com_Protocol(512,1);		//协议解析处理程序
 
 	return ;
 }

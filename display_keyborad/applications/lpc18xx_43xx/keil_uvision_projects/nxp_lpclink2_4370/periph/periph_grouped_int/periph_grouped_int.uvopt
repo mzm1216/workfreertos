@@ -122,7 +122,7 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
-        <nTsel>6</nTsel>
+        <nTsel>3</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -180,7 +180,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\..\examples\periph\periph_grouped_int\grouped_int.c</Filename>
+          <Filename>&lt;5&gt;..\..\..\..\examples\periph\periph_grouped_int\grouped_int.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\periph_grouped_int\../../../../examples/periph/periph_grouped_int/grouped_int.c\111</Expression>
         </Bp>
@@ -224,6 +224,9 @@
       <LintExecutable></LintExecutable>
       <LintConfigFile></LintConfigFile>
       <bLintAuto>0</bLintAuto>
+      <Lin2Executable></Lin2Executable>
+      <Lin2ConfigFile></Lin2ConfigFile>
+      <bLin2Auto>0</bLin2Auto>
       <SystemViewers>
         <Entry>
           <Name>System Viewer\GPIO_GROUP_INT0</Name>
@@ -248,7 +251,6 @@
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\startup_code\sysinit.c</PathWithFileName>
@@ -261,7 +263,6 @@
       <FileNumber>2</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\periph\periph_grouped_int\grouped_int.c</PathWithFileName>
@@ -274,7 +275,6 @@
       <FileNumber>3</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\startup_code\keil_startup_lpc18xx43xx.s</PathWithFileName>
@@ -287,7 +287,6 @@
       <FileNumber>4</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\periph\periph_grouped_int\readme.txt</PathWithFileName>
@@ -308,7 +307,6 @@
       <FileNumber>5</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\keil_output\core_m4\lib_lpc_chip_43xx.lib</PathWithFileName>
@@ -321,7 +319,6 @@
       <FileNumber>6</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\keil_output\core_m4\lib_lpc_board_4370.lib</PathWithFileName>

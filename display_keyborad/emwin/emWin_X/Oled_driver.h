@@ -19,9 +19,15 @@ uint8_t OLED_GetPixel(uint16_t X, uint16_t Y);
 #define OLCD_DC_PIN			10
 
 #else
+#ifdef USED_SSD1322_BX
+/*±„–Ø Ω P0_4*/
+#define OLCD_RESET_PORT 		0
+#define OLCD_RESET_PIN			4
+
+#else
 #define OLCD_RESET_PORT 		5
 #define OLCD_RESET_PIN			2
-
+#endif
 #define OLED_ON12_PORT 			5
 #define OLED_ON12_PIN			5
 

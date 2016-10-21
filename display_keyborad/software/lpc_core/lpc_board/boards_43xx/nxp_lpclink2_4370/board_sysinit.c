@@ -175,12 +175,15 @@ STATIC const PINMUX_GRP_T spifipinmuxing[] = {
 	{0x3, 7,  (SCU_PINIO_FAST | SCU_MODE_FUNC3)},	/* SPIFI D0 */
 	{0x3, 8,  (SCU_PINIO_FAST | SCU_MODE_FUNC3)}	/* SPIFI CS/SSEL */
 };
-#define USE_SSD2119
+
+/*便携式 显示板，OLED_REST管脚符号是--p1_0*/
+
 STATIC const PINMUX_GRP_T pinmuxing[] = {
 	
 #if 1
+	/*pinGroup	,Pinnum	,modefunc*/
 
-	#ifdef USE_SSD2119
+	#ifndef USED_SSD1322
 
 	//	{0x2, 7, (SCU_MODE_INACT | SCU_MODE_FUNC0)}, //p2_7
 //	{0x1, 1, (SCU_MODE_INACT | SCU_MODE_FUNC0)}, //p1_1
@@ -210,7 +213,13 @@ STATIC const PINMUX_GRP_T pinmuxing[] = {
 //	{0x2, 9, (SCU_MODE_INACT | SCU_MODE_FUNC0)}, //p2_9
 
 	{0x2, 1, (SCU_MODE_INACT | SCU_MODE_FUNC4)}, //LED_RUN
+#ifdef USED_SSD1322_BX
+	/*便携式的 液晶reset管教为 P1_0(P0.4)*/
+	{0x1, 0,  (SCU_MODE_INACT | SCU_MODE_FUNC0)}, //OLED_RES
+#else
+	/*TFT-SSD2119液晶reset管教为 P2_2(P5。2)*/
 	{0x2, 2, (SCU_MODE_INACT | SCU_MODE_FUNC4)}, //	OLED_RES	
+#endif
 	{0x2, 3, (SCU_MODE_PULLDOWN | SCU_MODE_FUNC2)}, //U3_TX
 	{0x2, 4, (SCU_MODE_INACT | SCU_MODE_INBUFF_EN | SCU_MODE_ZIF_DIS | SCU_MODE_FUNC2)}, // U3_RX
 	{0x2, 5, (SCU_MODE_INACT | SCU_MODE_FUNC4)}, //OLED_12ON

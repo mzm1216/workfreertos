@@ -71,9 +71,9 @@ extern "C" {
 
 //#define  LPC4370_ULINK2
 
-#define LED_WARN   	1		//告警灯
+#define LED_WARN   	0		//告警灯
 #define LED_RX		2		//接收灯
-#define LED_TX    	0		//发射灯
+#define LED_TX    	1		//发射灯
 
 
 /* For USBLIB examples */

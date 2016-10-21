@@ -486,7 +486,8 @@ void tft_ssd2119_init()
 	}	
 	
 	Delay(20000);
-	OLED_Clear_screen(0xF800);//清屏幕-黑屏
+//	OLED_Clear_screen(0xF800);//清屏幕-黑屏
+	OLED_Clear_screen(0x00);//清屏幕-黑屏
 	
 	Delay(2000000);
 }
@@ -624,6 +625,7 @@ void test_ssd2119(uint16_t color)
 {
 	uint32_t i,j;
 
+#ifdef USED_SSD2119
 	for(i=0;i<120;i++)
 		{
 			for(j=0;j<320;j++)               
@@ -647,6 +649,7 @@ void test_ssd2119(uint16_t color)
 #endif
 			}
 		}
+	#endif
 }
 /*****************************************************************************
  * 函 数 名  : OLED_refresh_fun
@@ -688,7 +691,7 @@ void OLED_refresh_fun(void)
 	Delay(2000);
 	maxx = 64;
 	maxy = 128;
-	ptrbuf=(uint8_t *)&LCDBUFF_MZM[0][0];
+	ptrbuf=LCDBUFF_MZM;
 	for (x=0;x<maxx;x++)   /* 64row*/
 	{
 		for (y=0;y<maxy;y++) /* 128*2=256 column a nibble of command is a dot*/
@@ -727,7 +730,7 @@ void OLED_refresh_fun(void)
 		}
 	}
 #endif
-	
+	return;
 }
 
 /*****************************************************************************
@@ -791,7 +794,6 @@ void OLED_INIT()
 	GUI_Clear();
 	GUI_UC_SetEncodeUTF8();
 }
-
 
 /***** 清零oled *****/
 void test_screen(uint8_t X1,uint8_t Y1,uint8_t X2,uint8_t Y2,uint8_t pixel)

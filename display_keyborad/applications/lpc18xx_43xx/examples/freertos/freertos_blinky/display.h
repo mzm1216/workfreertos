@@ -195,12 +195,16 @@ extern GUI_CONST_STORAGE GUI_BITMAP bmheartstep18;
 
 extern GUI_CONST_STORAGE GUI_BITMAP bmdown2;
 extern GUI_CONST_STORAGE GUI_BITMAP bmup2;
+
 extern GUI_CONST_STORAGE GUI_BITMAP bmmcx;
 extern GUI_CONST_STORAGE GUI_BITMAP bmmcx1;
 extern GUI_CONST_STORAGE GUI_BITMAP bmbmp1;
 extern GUI_CONST_STORAGE GUI_BITMAP bmbmp5;
 extern GUI_CONST_STORAGE GUI_BITMAP bmbmp3e;
 extern GUI_CONST_STORAGE GUI_BITMAP bmcolortest;
+extern GUI_CONST_STORAGE GUI_BITMAP bmbmp11;
+extern GUI_CONST_STORAGE GUI_BITMAP bmbmp12;
+
 
 //extern const unsigned char _acmcx1[6784UL + 1];
 
@@ -410,12 +414,20 @@ DISPLAY_WORK_MODE1_TITLE_T work_mode1_title =
 
 ST_MENUITEM	 win1_test1[]=
 {
+#ifndef USED_SSD2119
+	CZ_FIRST_PIC_X_OFFSET	,CZ_FIRST_PIC_Y_OFFSET	,NULL,NULL,NULL,NULL,func_display_area_1_3,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
+		
+		CZ_FIRST_PIC_X_OFFSET	,CZ_FIRST_PIC_Y_OFFSET	,NULL,NULL,NULL,NULL,func_display_area_3,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
+#else
 //	CZ_FIRST_PIC_X_OFFSET	,CZ_FIRST_PIC_Y_OFFSET	,NULL,NULL,NULL,NULL,func_display_area_1_3,
 		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
-		
+#endif		
 //		0	,0	,NULL,NULL,NULL,NULL,func_display_area_3,
 //		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
 //		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
@@ -437,11 +449,19 @@ ST_MENUITEM	 win1_test1[]=
 
 ST_MENUITEM	 win2_test2[]=
 {
+
+#ifndef USED_SSD2119
+	CZ_FIRST_PIC_X_OFFSET	,CZ_FIRST_PIC_Y_OFFSET	,NULL,NULL,NULL,NULL,func_display_area_1_3,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
+#else
 //	0	,0	,NULL,NULL,NULL,NULL,func_display_area_3,
 		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
+	#endif
 //		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
 //		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
 //		
@@ -458,12 +478,20 @@ ST_MENUITEM	 win2_test2[]=
 
 ST_MENUITEM	 win2_test3[]=
 {
+
+#ifndef USED_SSD2119
+	CZ_FIRST_PIC_X_OFFSET	,CZ_FIRST_PIC_Y_OFFSET	,NULL,NULL,NULL,NULL,func_display_area_1_3,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
+#else
 //	0	,0	,NULL,NULL,NULL,NULL,func_display_area_3,
 //		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
 		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
+	#endif
 //		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
 
 //	INFOPAR_RXSIZE,  PAVOLTAG_YCOORDINATE_TITLE,  "报警状态", NULL, NULL, func_alarmstate, 
@@ -480,6 +508,12 @@ ST_MENUITEM	 win2_test3[]=
 
 ST_MENUITEM	 win2_test4[]=
 {
+#ifndef USED_SSD2119
+	CZ_FIRST_PIC_X_OFFSET	,CZ_FIRST_PIC_Y_OFFSET	,NULL,NULL,NULL,NULL,func_display_area_1_3,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
+		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
+#else
 //	0	,0	,NULL,NULL,NULL,NULL,func_display_area_3,
 //		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
 //		CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
@@ -487,6 +521,7 @@ ST_MENUITEM	 win2_test4[]=
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
+	#endif
 //	INFOPAR_RXSIZE,  PAVOLTAG_YCOORDINATE_TITLE,  "麦克风压控", NULL, NULL, Func_MicVC, 
 //	INFOPAR_LXSIZE, PATEMP_YCOORDINATE_TITLE,  "静噪控制", NULL, NULL, Func_SqCtrlStatus,
 //	INFOPAR_RXSIZE,  PATEMP_YCOORDINATE_TITLE,  "报警提示音", NULL, NULL, Func_AlarmToneState,
@@ -500,9 +535,14 @@ ST_MENUITEM	 win2_test4[]=
 
 ST_MENUITEM	 win2_test5[]=
 {
+	#ifndef USED_SSD2119
+		0, 0,  "5_1", NULL,NULL, NULL, func_chnumber5,
+		120, 0,  "5_2", NULL,NULL, NULL, func_chnumber7,
+	#else
 	
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
+	#endif
 //	0	,0	,NULL,NULL,NULL,NULL,func_display_area_3,
 //		120, 0,  "5_2", NULL,NULL, NULL, func_chnumber7,
 //	INFOPAR_LXSIZE, PATEMP_YCOORDINATE_TITLE,  "动态驻留界面", NULL, NULL, Func_DgdisState, 
@@ -510,6 +550,12 @@ ST_MENUITEM	 win2_test5[]=
 
 ST_MENUITEM	 win2_test6[]=
 {
+	#ifndef USED_SSD2119
+		CZ_FIRST_PIC_X_OFFSET	,CZ_FIRST_PIC_Y_OFFSET	,NULL,NULL,NULL,NULL,func_display_area_1_3,
+	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
+	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
+	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
+	#else
 //	0	,0	,NULL,NULL,NULL,NULL,func_display_area_3,
 //	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_2,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
@@ -517,6 +563,7 @@ ST_MENUITEM	 win2_test6[]=
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
 	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_4,
 //	CZ_SECOND_PIC_X_OFFSET	,CZ_SECOND_PIC_Y_OFFSET ,NULL,NULL,NULL,NULL,func_display_area_5,
+#endif
 //	INFOPAR_RXSIZE,  PAVOLTAG_YCOORDINATE_TITLE,NULL, NULL, NULL, NULL, 
 //	INFOPAR_LXSIZE, PATEMP_YCOORDINATE_TITLE,  NULL, NULL, NULL, NULL,
 //	INFOPAR_RXSIZE,  PATEMP_YCOORDINATE_TITLE,  NULL, NULL, NULL, NULL, 
@@ -530,7 +577,11 @@ ST_MENUITEM	 win2_test6[]=
 
 MY_NEW_MENU WIN_MENU_1[] =
 {
+#ifndef USED_SSD2119
+	0 ,	&win1_test1[0], NULL,            &WIN_MENU_1[1]  ,
+#else
     0 ,	&win1_test1[0], NULL,           NULL  ,
+#endif
 	1 , &win1_test1[1], &WIN_MENU_1[0],  &WIN_MENU_1[2]  ,
 	2 , &win1_test1[2], &WIN_MENU_1[1],  &WIN_MENU_1[3]  ,
 	3 , &win1_test1[3], &WIN_MENU_1[2],  &WIN_MENU_1[4]  ,
@@ -643,13 +694,21 @@ extern GUI_CONST_STORAGE GUI_BITMAP bmbjs;
 
 WINDOWS_NEW TopWindows[6]=
 {
-    {0, 0,  	(void *)&bmbmp1,    	WIN_MENU_1},
-    {0, 0,  	(void *)&bmbmp5,    	WIN_MENU_2},
+#ifndef USED_SSD2119
+   	{0, 0,  (void *)&bmback_pic,    	WIN_MENU_1},
+    {0, 0,  (void *)&bmcz2,    			WIN_MENU_2},
+    {0, 0,  (void *)&bmback_pic,    	WIN_MENU_3},
+    {0, 0, 	(void *)&bmcz4,    			WIN_MENU_4},
+    {0, 0, 	(void *)&bmback_pic,    	WIN_MENU_5},
+    {0, 0,  (void *)&bmcz4,    			WIN_MENU_6},
+#else
+    {0, 0,  	(void *)&bmbmp11,    	WIN_MENU_1},
+    {0, 0,  	(void *)&bmbmp12,    	WIN_MENU_2},
     {0, 0,  	(void *)&bmcolortest,    	WIN_MENU_3},
     {0, 0, 	(void *)&bmbmp3e,    	WIN_MENU_4},
-    {0, 0, 	(void *)&bmbmp5,    	WIN_MENU_5},
-    {0, 0,  	(void *)&bmbmp3e,    	WIN_MENU_6},
-
+    {0, 0, 	(void *)&bmbmp1,    	WIN_MENU_5},
+    {0, 0,  	(void *)&bmbmp5,    	WIN_MENU_6},
+#endif
 };
 #define WINDOWS_NUM 	(sizeof(TopWindows)/sizeof(WINDOWS_NEW))
 // 显示操作结构体

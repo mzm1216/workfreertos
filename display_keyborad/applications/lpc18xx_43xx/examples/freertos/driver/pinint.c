@@ -3,9 +3,11 @@
 #include "apptask.h"
 #include "pinint.h"
 
-#ifdef USED_SSD2119
+#ifndef USED_SSD1322
 PIN_INT_KB_T pin_int_config[8]=
 {
+
+#ifdef USED_SSD2119
 	//pinindex-  	  端口 管脚-  符号- 符号- 类型-   中断号
 	{PININT_INDEX0,		3,	 0,		6,	1,		0,	PIN_INT0_IRQn},// 	up
 	{PININT_INDEX1,		3,	 1,		6,	 2,		0,	PIN_INT1_IRQn},//	ack
@@ -15,6 +17,21 @@ PIN_INT_KB_T pin_int_config[8]=
 	{PININT_INDEX5,		3,	 4,		6,	5,		0,	PIN_INT5_IRQn},//	enter
 	{PININT_INDEX6,		3,	3,		6,	4,		0,	PIN_INT6_IRQn},//	cancel
 	{	 0xff	  ,			3,	3,		6,	4,		0,	PIN_INT6_IRQn}
+
+#else
+	/*便携式的 按键跟 tftssd2119的按键布局不一致*/
+	//pinindex-  	  端口 管脚-  符号- 符号- 类型-   中断号
+
+	{PININT_INDEX0,		3,	1,		6,	2,		0,	PIN_INT0_IRQn},// 	up
+	{PININT_INDEX1,		0,	12,		1,	17,		0,	PIN_INT1_IRQn},//	ack
+	{PININT_INDEX2,		0,	 13,		1,	18,		0,	PIN_INT2_IRQn},//	down
+	{PININT_INDEX3,		0,	 15,		1,	20,		0,	PIN_INT3_IRQn},//	left
+	{PININT_INDEX4,		3,	 0,		6,	1,		0,	PIN_INT4_IRQn},//	right
+	{PININT_INDEX5,		3,	 4,		6,	5,		0,	PIN_INT5_IRQn},//	enter
+	{PININT_INDEX6,		3,	3,		6,	4,		0,	PIN_INT6_IRQn},//	cancel
+	{	 0xff	  ,			3,	3,		6,	4,		0,	PIN_INT6_IRQn}
+
+	#endif
 };
 
 #else

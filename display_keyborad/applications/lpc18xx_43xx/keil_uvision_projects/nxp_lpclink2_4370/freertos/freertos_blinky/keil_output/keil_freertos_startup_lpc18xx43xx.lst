@@ -461,9 +461,9 @@ ARM Macro Assembler    Page 8
 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\keil_output\keil_freertos_startup_lpc18xx43xx.d -o.\keil_outp
-ut\keil_freertos_startup_lpc18xx43xx.o -IC:\Keil_v5_20\ARM\RV31\INC -IC:\Keil_v
-5_20\ARM\CMSIS\Include -IC:\Keil_v5_20\ARM\Inc\NXP\LPC43xx --predefine="__UVISI
-ON_VERSION SETA 520" --list=.\keil_output\keil_freertos_startup_lpc18xx43xx.lst
+ut\keil_freertos_startup_lpc18xx43xx.o -IC:\Keil_v5_21\ARM\RV31\INC -IC:\Keil_v
+5_21\ARM\CMSIS\Include -IC:\Keil_v5_21\ARM\Inc\NXP\LPC43xx --predefine="__UVISI
+ON_VERSION SETA 521" --list=.\keil_output\keil_freertos_startup_lpc18xx43xx.lst
  ..\..\..\..\examples\freertos\startup_code\keil_freertos_startup_lpc18xx43xx.s
 
 

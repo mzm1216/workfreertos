@@ -1,5 +1,5 @@
 .\keil_output\up2.o: F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\新建文件夹\CC\up2.c
-.\keil_output\up2.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdlib.h
+.\keil_output\up2.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdlib.h
 .\keil_output\up2.o: ..\..\..\..\..\..\emwin\emWin_header\GUI.h
 .\keil_output\up2.o: ..\..\..\..\..\..\emwin\emWin_header\GUI_ConfDefaults.h
 .\keil_output\up2.o: ..\..\..\..\..\..\emwin\emWin_X\GUIConf.h
@@ -11,8 +11,8 @@
 .\keil_output\up2.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\config_43xx\sys_config.h
 .\keil_output\up2.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\cmsis.h
 .\keil_output\up2.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h
-.\keil_output\up2.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdint.h
-.\keil_output\up2.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdbool.h
+.\keil_output\up2.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdint.h
+.\keil_output\up2.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdbool.h
 .\keil_output\up2.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\config_43xx\cmsis_43xx.h
 .\keil_output\up2.o: ..\..\..\..\..\..\software\CMSIS\CMSIS\Include\core_cm4.h
 .\keil_output\up2.o: ..\..\..\..\..\..\software\CMSIS\CMSIS\Include\core_cmInstr.h
@@ -70,6 +70,6 @@
 .\keil_output\up2.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\i2cm_18xx_43xx.h
 .\keil_output\up2.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\fpu_init.h
 .\keil_output\up2.o: ..\..\..\..\..\..\software\lpc_core\lpc_board\board_common\board_api.h
-.\keil_output\up2.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdio.h
+.\keil_output\up2.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdio.h
 .\keil_output\up2.o: ..\..\..\..\..\..\emwin\emWin_header\Global.h
 .\keil_output\up2.o: ..\..\..\..\..\..\emwin\emWin_header\GUI_Version.h

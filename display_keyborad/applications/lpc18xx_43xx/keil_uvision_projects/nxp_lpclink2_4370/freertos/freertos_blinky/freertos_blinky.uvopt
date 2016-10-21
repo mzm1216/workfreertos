@@ -122,7 +122,7 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
-        <nTsel>6</nTsel>
+        <nTsel>3</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -246,12 +246,15 @@
       <LintExecutable></LintExecutable>
       <LintConfigFile></LintConfigFile>
       <bLintAuto>0</bLintAuto>
+      <Lin2Executable></Lin2Executable>
+      <Lin2ConfigFile></Lin2ConfigFile>
+      <bLin2Auto>0</bLin2Auto>
     </TargetOption>
   </Target>
 
   <Group>
     <GroupName>src</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -260,7 +263,6 @@
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\startup_code\sysinit.c</PathWithFileName>
@@ -273,7 +275,6 @@
       <FileNumber>2</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\startup_code\keil_freertos_startup_lpc18xx43xx.s</PathWithFileName>
@@ -286,7 +287,6 @@
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\freertos_blinky\main.c</PathWithFileName>
@@ -299,7 +299,6 @@
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\freertos_blinky\apptask.c</PathWithFileName>
@@ -312,7 +311,6 @@
       <FileNumber>5</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\freertos_blinky\trccom.c</PathWithFileName>
@@ -325,7 +323,6 @@
       <FileNumber>6</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\freertos_blinky\display.c</PathWithFileName>
@@ -338,7 +335,6 @@
       <FileNumber>7</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\freertos_blinky\kb_dev.c</PathWithFileName>
@@ -350,7 +346,7 @@
 
   <Group>
     <GroupName>freertos</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -359,7 +355,6 @@
       <FileNumber>8</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\freertos\freertos\Source\list.c</PathWithFileName>
@@ -372,7 +367,6 @@
       <FileNumber>9</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\freertos\freertos\Source\queue.c</PathWithFileName>
@@ -385,7 +379,6 @@
       <FileNumber>10</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\freertos\freertos\Source\tasks.c</PathWithFileName>
@@ -398,7 +391,6 @@
       <FileNumber>11</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\freertos\freertos\Source\timers.c</PathWithFileName>
@@ -411,7 +403,6 @@
       <FileNumber>12</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\freertos\freertos\Source\portable\RVDS\ARM_CM4F\port.c</PathWithFileName>
@@ -424,7 +415,6 @@
       <FileNumber>13</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\freertos\freertoslpc\FreeRTOSCommonHooks.c</PathWithFileName>
@@ -437,7 +427,6 @@
       <FileNumber>14</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\freertos_blinky\readme.txt</PathWithFileName>
@@ -450,7 +439,6 @@
       <FileNumber>15</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\freertos\freertos\Source\portable\MemMang\heap_4.c</PathWithFileName>
@@ -471,7 +459,6 @@
       <FileNumber>16</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_X\GUI_X_FreeRTOS.c</PathWithFileName>
@@ -484,7 +471,6 @@
       <FileNumber>17</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_X\GUIConf.c</PathWithFileName>
@@ -497,7 +483,6 @@
       <FileNumber>18</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_X\LCDConf.c</PathWithFileName>
@@ -510,7 +495,6 @@
       <FileNumber>19</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_X\Oled_driver.c</PathWithFileName>
@@ -531,7 +515,6 @@
       <FileNumber>20</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\BUTTON.h</PathWithFileName>
@@ -544,7 +527,6 @@
       <FileNumber>21</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\CALENDAR.h</PathWithFileName>
@@ -557,7 +539,6 @@
       <FileNumber>22</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\CHECKBOX.h</PathWithFileName>
@@ -570,7 +551,6 @@
       <FileNumber>23</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\CHOOSECOLOR.h</PathWithFileName>
@@ -583,7 +563,6 @@
       <FileNumber>24</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\CHOOSEFILE.h</PathWithFileName>
@@ -596,7 +575,6 @@
       <FileNumber>25</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\DIALOG.h</PathWithFileName>
@@ -609,7 +587,6 @@
       <FileNumber>26</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\DIALOG_Intern.h</PathWithFileName>
@@ -622,7 +599,6 @@
       <FileNumber>27</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\DROPDOWN.h</PathWithFileName>
@@ -635,7 +611,6 @@
       <FileNumber>28</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\EDIT.h</PathWithFileName>
@@ -648,7 +623,6 @@
       <FileNumber>29</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\FRAMEWIN.h</PathWithFileName>
@@ -661,7 +635,6 @@
       <FileNumber>30</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\Global.h</PathWithFileName>
@@ -674,7 +647,6 @@
       <FileNumber>31</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GRAPH.h</PathWithFileName>
@@ -687,7 +659,6 @@
       <FileNumber>32</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI.h</PathWithFileName>
@@ -700,7 +671,6 @@
       <FileNumber>33</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_ARRAY.h</PathWithFileName>
@@ -713,7 +683,6 @@
       <FileNumber>34</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_ConfDefaults.h</PathWithFileName>
@@ -726,7 +695,6 @@
       <FileNumber>35</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_Debug.h</PathWithFileName>
@@ -739,7 +707,6 @@
       <FileNumber>36</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_FontIntern.h</PathWithFileName>
@@ -752,7 +719,6 @@
       <FileNumber>37</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_HOOK.h</PathWithFileName>
@@ -765,7 +731,6 @@
       <FileNumber>38</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_Private.h</PathWithFileName>
@@ -778,7 +743,6 @@
       <FileNumber>39</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_SetOrientation.h</PathWithFileName>
@@ -791,7 +755,6 @@
       <FileNumber>40</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_SetOrientationCX.h</PathWithFileName>
@@ -804,7 +767,6 @@
       <FileNumber>41</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_Type.h</PathWithFileName>
@@ -817,7 +779,6 @@
       <FileNumber>42</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_Version.h</PathWithFileName>
@@ -830,7 +791,6 @@
       <FileNumber>43</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUI_VNC.h</PathWithFileName>
@@ -843,7 +803,6 @@
       <FileNumber>44</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_BitPlains.h</PathWithFileName>
@@ -856,7 +815,6 @@
       <FileNumber>45</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_DCache.h</PathWithFileName>
@@ -869,7 +827,6 @@
       <FileNumber>46</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_Dist.h</PathWithFileName>
@@ -882,7 +839,6 @@
       <FileNumber>47</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_FlexColor.h</PathWithFileName>
@@ -895,7 +851,6 @@
       <FileNumber>48</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_IST3088.h</PathWithFileName>
@@ -908,7 +863,6 @@
       <FileNumber>49</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_Lin.h</PathWithFileName>
@@ -921,7 +875,6 @@
       <FileNumber>50</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_Lin_Opt_8.h</PathWithFileName>
@@ -934,7 +887,6 @@
       <FileNumber>51</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_Lin_Opt_16.h</PathWithFileName>
@@ -947,7 +899,6 @@
       <FileNumber>52</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_Lin_Opt_24.h</PathWithFileName>
@@ -960,7 +911,6 @@
       <FileNumber>53</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_Lin_Opt_32.h</PathWithFileName>
@@ -973,7 +923,6 @@
       <FileNumber>54</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_NoOpt_1_8.h</PathWithFileName>
@@ -986,7 +935,6 @@
       <FileNumber>55</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_S1D15G00.h</PathWithFileName>
@@ -999,7 +947,6 @@
       <FileNumber>56</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_S1D13748.h</PathWithFileName>
@@ -1012,7 +959,6 @@
       <FileNumber>57</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_S1D13781.h</PathWithFileName>
@@ -1025,7 +971,6 @@
       <FileNumber>58</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_SLin.h</PathWithFileName>
@@ -1038,7 +983,6 @@
       <FileNumber>59</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_SPage.h</PathWithFileName>
@@ -1051,7 +995,6 @@
       <FileNumber>60</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_SSD1926.h</PathWithFileName>
@@ -1064,7 +1007,6 @@
       <FileNumber>61</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_Template.h</PathWithFileName>
@@ -1077,7 +1019,6 @@
       <FileNumber>62</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUIDRV_TemplateI.h</PathWithFileName>
@@ -1090,7 +1031,6 @@
       <FileNumber>63</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\GUITDRV_ADS7846.h</PathWithFileName>
@@ -1103,7 +1043,6 @@
       <FileNumber>64</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\HEADER.h</PathWithFileName>
@@ -1116,7 +1055,6 @@
       <FileNumber>65</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\ICONVIEW.h</PathWithFileName>
@@ -1129,7 +1067,6 @@
       <FileNumber>66</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\IMAGE.h</PathWithFileName>
@@ -1142,7 +1079,6 @@
       <FileNumber>67</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\IMAGE_Private.h</PathWithFileName>
@@ -1155,7 +1091,6 @@
       <FileNumber>68</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\KNOB.h</PathWithFileName>
@@ -1168,7 +1103,6 @@
       <FileNumber>69</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\LCD.h</PathWithFileName>
@@ -1181,7 +1115,6 @@
       <FileNumber>70</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\LCD_ConfDefaults.h</PathWithFileName>
@@ -1194,7 +1127,6 @@
       <FileNumber>71</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\LCD_Protected.h</PathWithFileName>
@@ -1207,7 +1139,6 @@
       <FileNumber>72</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\LCD_SIM.h</PathWithFileName>
@@ -1220,7 +1151,6 @@
       <FileNumber>73</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\LISTBOX.h</PathWithFileName>
@@ -1233,7 +1163,6 @@
       <FileNumber>74</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\LISTVIEW.h</PathWithFileName>
@@ -1246,7 +1175,6 @@
       <FileNumber>75</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\LISTWHEEL.h</PathWithFileName>
@@ -1259,7 +1187,6 @@
       <FileNumber>76</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\MENU.h</PathWithFileName>
@@ -1272,7 +1199,6 @@
       <FileNumber>77</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\MESSAGEBOX.h</PathWithFileName>
@@ -1285,7 +1211,6 @@
       <FileNumber>78</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\MULTIEDIT.h</PathWithFileName>
@@ -1298,7 +1223,6 @@
       <FileNumber>79</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\MULTIPAGE.h</PathWithFileName>
@@ -1311,7 +1235,6 @@
       <FileNumber>80</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\PROGBAR.h</PathWithFileName>
@@ -1324,7 +1247,6 @@
       <FileNumber>81</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\RADIO.h</PathWithFileName>
@@ -1337,7 +1259,6 @@
       <FileNumber>82</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\SCROLLBAR.h</PathWithFileName>
@@ -1350,7 +1271,6 @@
       <FileNumber>83</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\SLIDER.h</PathWithFileName>
@@ -1363,7 +1283,6 @@
       <FileNumber>84</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\SPINBOX.h</PathWithFileName>
@@ -1376,7 +1295,6 @@
       <FileNumber>85</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\TEXT.h</PathWithFileName>
@@ -1389,7 +1307,6 @@
       <FileNumber>86</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\TREEVIEW.h</PathWithFileName>
@@ -1402,7 +1319,6 @@
       <FileNumber>87</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\WIDGET.h</PathWithFileName>
@@ -1415,7 +1331,6 @@
       <FileNumber>88</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\WM.h</PathWithFileName>
@@ -1428,7 +1343,6 @@
       <FileNumber>89</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\WM_GUI.h</PathWithFileName>
@@ -1441,7 +1355,6 @@
       <FileNumber>90</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_header\WM_Intern.h</PathWithFileName>
@@ -1453,7 +1366,7 @@
 
   <Group>
     <GroupName>emwinBitmap</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -1462,7 +1375,6 @@
       <FileNumber>91</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\HT24.c</PathWithFileName>
@@ -1475,7 +1387,6 @@
       <FileNumber>92</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\bjs.c</PathWithFileName>
@@ -1488,7 +1399,6 @@
       <FileNumber>93</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\cz2.c</PathWithFileName>
@@ -1501,7 +1411,6 @@
       <FileNumber>94</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\cz4.c</PathWithFileName>
@@ -1514,7 +1423,6 @@
       <FileNumber>95</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\HT29.c</PathWithFileName>
@@ -1527,7 +1435,6 @@
       <FileNumber>96</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\ST12.c</PathWithFileName>
@@ -1540,7 +1447,6 @@
       <FileNumber>97</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep1.c</PathWithFileName>
@@ -1553,7 +1459,6 @@
       <FileNumber>98</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep2.c</PathWithFileName>
@@ -1566,7 +1471,6 @@
       <FileNumber>99</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep3.c</PathWithFileName>
@@ -1579,7 +1483,6 @@
       <FileNumber>100</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep4.c</PathWithFileName>
@@ -1592,7 +1495,6 @@
       <FileNumber>101</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep5.c</PathWithFileName>
@@ -1605,7 +1507,6 @@
       <FileNumber>102</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep6.c</PathWithFileName>
@@ -1618,7 +1519,6 @@
       <FileNumber>103</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep7.c</PathWithFileName>
@@ -1631,7 +1531,6 @@
       <FileNumber>104</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep8.c</PathWithFileName>
@@ -1644,7 +1543,6 @@
       <FileNumber>105</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\msc最终版\msc_black.c</PathWithFileName>
@@ -1657,7 +1555,6 @@
       <FileNumber>106</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\msc最终版\msc_white.c</PathWithFileName>
@@ -1670,7 +1567,6 @@
       <FileNumber>107</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\数据库bmp最终版\db_black.c</PathWithFileName>
@@ -1683,7 +1579,6 @@
       <FileNumber>108</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\数据库bmp最终版\db_white.c</PathWithFileName>
@@ -1696,7 +1591,6 @@
       <FileNumber>109</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\网络连接bmp最终版\net_black.c</PathWithFileName>
@@ -1709,7 +1603,6 @@
       <FileNumber>110</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\网络连接bmp最终版\net_white.c</PathWithFileName>
@@ -1722,7 +1615,6 @@
       <FileNumber>111</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\背景最终版\back_pic.c</PathWithFileName>
@@ -1735,7 +1627,6 @@
       <FileNumber>112</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\新建文件夹\CC\up2.c</PathWithFileName>
@@ -1748,7 +1639,6 @@
       <FileNumber>113</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\新建文件夹\CC\down2.c</PathWithFileName>
@@ -1761,7 +1651,6 @@
       <FileNumber>114</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\mcx.c</PathWithFileName>
@@ -1774,7 +1663,6 @@
       <FileNumber>115</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\mcx1.c</PathWithFileName>
@@ -1787,7 +1675,6 @@
       <FileNumber>116</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\bmp1.c</PathWithFileName>
@@ -1800,7 +1687,6 @@
       <FileNumber>117</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\bmp3e.c</PathWithFileName>
@@ -1813,7 +1699,6 @@
       <FileNumber>118</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\bmp5.c</PathWithFileName>
@@ -1826,11 +1711,34 @@
       <FileNumber>119</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_bitmap\colortest.c</PathWithFileName>
       <FilenameWithoutPath>colortest.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>120</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>F:\works\同事\王伟\OLED\演示版\bmp11.c</PathWithFileName>
+      <FilenameWithoutPath>bmp11.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>121</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>F:\works\同事\王伟\OLED\演示版\bmp12.c</PathWithFileName>
+      <FilenameWithoutPath>bmp12.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1844,10 +1752,9 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>120</FileNumber>
+      <FileNumber>122</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\keil_output\core_m4\lib_lpc_chip_43xx.lib</PathWithFileName>
@@ -1857,10 +1764,9 @@
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>121</FileNumber>
+      <FileNumber>123</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\keil_output\core_m4\lib_lpc_board_4370.lib</PathWithFileName>
@@ -1870,10 +1776,9 @@
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>122</FileNumber>
+      <FileNumber>124</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\..\..\emwin\emWin_library\Keil\emWin_M4F.lib</PathWithFileName>
@@ -1891,10 +1796,9 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>123</FileNumber>
+      <FileNumber>125</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\driver\pinint.c</PathWithFileName>
@@ -1904,10 +1808,9 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>124</FileNumber>
+      <FileNumber>126</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\driver\uart.c</PathWithFileName>
@@ -1917,10 +1820,9 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>125</FileNumber>
+      <FileNumber>127</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\driver\dma.c</PathWithFileName>
@@ -1930,10 +1832,9 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>126</FileNumber>
+      <FileNumber>128</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>1</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\..\examples\freertos\driver\driver_sct.c</PathWithFileName>

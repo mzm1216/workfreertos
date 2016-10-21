@@ -85,7 +85,7 @@ static void prvSetupHardware(void)
 //	/* Initial LED0 state is off */
 	Board_LED_Set(LED_WARN, false);
 	Board_LED_Set(LED_RX, false);
-	Board_LED_Set(LED_TX, false);
+	Board_LED_Set(LED_TX, true);
 
 	
 	uart_dev_init();	//串口设备初始化
@@ -375,11 +375,11 @@ static void vUARTTask(void *pvParameters) {
 		count++;
 		if(count %2)
 		{
-			test_ssd2119(0x001F);
+//			test_ssd2119(0x001F);
 		}
 		else
 		{
-			test_ssd2119(0xF800);
+//			test_ssd2119(0xF800);
 			
 		}
 #if 0

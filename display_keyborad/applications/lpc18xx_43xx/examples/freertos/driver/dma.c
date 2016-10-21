@@ -45,10 +45,11 @@ static volatile DMA_TransferDescriptor_t LcdBuffer[LCD_MAX_DMA_TIMES];//´«Êä1ÆÁD
 #if LCD_BUS_WIDTH == 8
 #define LCD_BUS_DATA_TYPE 	uint8_t
 #endif
+
  #ifdef USED_SSD2119
  extern __align(8)  uint16_t LCDBUFF_MZM[120* 320] __attribute__ ((section ("VRAM"), zero_init));
- //#else
- //extern uint8_t LCDBUFF_MZM[64][128];//256*64*4bit=64Row *64Column*2byte
+ #else
+ extern uint8_t LCDBUFF_MZM[64][128];//256*64*4bit=64Row *64Column*2byte
  
 #endif
 

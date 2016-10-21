@@ -16,8 +16,30 @@
 
 
 static uint32 rt_debug_level=0;//调试级别
+ uint32 rt_test_backlight=99;//调试级别
 
 void rt_kprintf(uint32_t flg,const char *fmt, ...);
+/*****************************************************************************
+ * 函 数 名  : Set_Debug_Level
+ * 负 责 人  : MZM
+ * 创建日期  : 2016年5月16日
+ * 函数功能  : 使能调试级别
+ * 输入参数  : uint32 level  调试级别：bit 0-31 代表不同的调试信息
+ * 输出参数  : 无
+ * 返 回 值  : 
+ * 调用关系  : 
+ * 其    它  : 
+
+*****************************************************************************/
+void Set_back_light(uint32 level)
+{
+	rt_test_backlight = level ;
+//	rt_debug_level=level;
+}
+uint32 Get_back_light()
+{
+	return rt_test_backlight%100;
+}
 
 /*****************************************************************************
  * 函 数 名  : Clear_Debug_Level
@@ -52,6 +74,7 @@ void Set_All_Debug_Level()
 {
 	rt_debug_level = 0xFFFFFFFF;
 }
+
 
 /*****************************************************************************
  * 函 数 名  : Set_Debug_Level
@@ -284,7 +307,7 @@ void rt_kprintf(uint32_t flg,const char *fmt, ...)
 //   
 //	if(Get_Debug_Level()&(0x1<<flg))
 	{
-		va_start(args, fmt);
+			va_start(args, fmt);
 			/* the return value of vsnprintf is the number of bytes that would be
 			 * written to buffer had if the size of the buffer been sufficiently
 			 * large excluding the terminating null byte. If the output string
@@ -323,7 +346,7 @@ void rt_kprintf_dirver(const char *fmt, ...)
 
 	
 	
-    va_start(args, fmt);
+    //va_start(args, fmt);
     /* the return value of vsnprintf is the number of bytes that would be
      * written to buffer had if the size of the buffer been sufficiently
      * large excluding the terminating null byte. If the output string
@@ -337,7 +360,7 @@ void rt_kprintf_dirver(const char *fmt, ...)
 
 //		pUART=(LPC_USART_T *)Get_TRC_Com_Dev_Uart(0);
 //		bytes = Chip_UART_SendRB(pUART, &Txring[0], rt_log_buf, length);//发送
-    va_end(args);
+  //  va_end(args);
 }
 
 /*****************************************************************************

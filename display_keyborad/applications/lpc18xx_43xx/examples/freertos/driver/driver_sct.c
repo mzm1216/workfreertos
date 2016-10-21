@@ -6,7 +6,7 @@
 
 #define SCT_PWM            LPC_SCT
 
-#define SCT_PWM_PIN_FAN_EN1        0		/* 风扇EN1 */
+#define SCT_PWM_PIN_FAN_EN1        9	/* 风扇EN1 */
 #define SCT_PWM_PIN_FAN_EN2        1		/* 风扇EN2 */
 #define SCT_PWM_PIN_FAN_EN3        2		/* 风扇EN3*/
 #define SCT_PWM_PIN_FAN_EN4        3		/* FAN_PWM*/
@@ -16,7 +16,7 @@
 #define SCT_PWM_INDEX_FAN_EN3        3		/* 风扇EN1--INDEX */
 #define SCT_PWM_INDEX_FAN_EN4        4		/* 风扇EN1--INDEX */
 
-#define SCT_PWM_RATE   20000		/* PWM frequency 10 KHz */
+#define SCT_PWM_RATE   200		/* PWM frequency 10 KHz */
 #define TICKRATE_HZ     1000		/* 1 ms Tick rate */
 
 #define LED_STEP_CNT      10		/* Change LED duty cycle every 20ms */
@@ -29,14 +29,14 @@
 /*****************************************************************************
  * Private functions
  ****************************************************************************/
-
+void sctpwm(uint8_t index,uint32_t level);
 /* Setup board specific pin muxing */
 static void PWM_setup_pin(void)
 {
 	/* SCT_OUT5 on P2.11 mapped to FUNC1: LED2 */
-	Chip_SCU_PinMuxSet(0x2, 11, (SCU_MODE_INACT | SCU_MODE_FUNC1));
+	Chip_SCU_PinMuxSet(0x1, 4, (SCU_MODE_INACT | SCU_MODE_FUNC1));
 	/* SCT_OUT4 on P2.12 mapped to FUNC1: Oscilloscope input */
-	Chip_SCU_PinMuxSet(0x2, 12, (SCU_MODE_INACT | SCU_MODE_FUNC1));
+//	Chip_SCU_PinMuxSet(0x2, 12, (SCU_MODE_INACT | SCU_MODE_FUNC1));
 //	Chip_SCU_PinMuxSet(LPC_IOCON, 0, 7, IOCON_FUNC2 | IOCON_MODE_INACT | IOCON_DIGITAL_EN | IOCON_INPFILT_OFF);
 //	Chip_SCU_PinMuxSet(LPC_IOCON, 0, 8, IOCON_FUNC2 | IOCON_MODE_INACT | IOCON_DIGITAL_EN | IOCON_INPFILT_OFF);
 
@@ -65,14 +65,16 @@ void RTU_PWMDev_Init()
 	PWM_setup_pin();
 	/* Use SCT0_OUT0-3 pin */
 	Chip_SCTPWM_SetOutPin(SCT_PWM, SCT_PWM_INDEX_FAN_EN1, SCT_PWM_PIN_FAN_EN1);
-	Chip_SCTPWM_SetOutPin(SCT_PWM, SCT_PWM_INDEX_FAN_EN2, SCT_PWM_PIN_FAN_EN2);
+//   //	Chip_SCTPWM_SetOutPin(SCT_PWM, SCT_PWM_INDEX_FAN_EN2, SCT_PWM_PIN_FAN_EN2);
 
 
 	/* Start with 0% duty cycle */
 	Chip_SCTPWM_SetDutyCycle(SCT_PWM, SCT_PWM_INDEX_FAN_EN1, 0);
-	Chip_SCTPWM_SetDutyCycle(SCT_PWM, SCT_PWM_INDEX_FAN_EN2, 0);
+//	//Chip_SCTPWM_SetDutyCycle(SCT_PWM, SCT_PWM_INDEX_FAN_EN2, 0);
 
 	Chip_SCTPWM_Start(SCT_PWM);
+
+	sctpwm(1,50);
 	
 }
 

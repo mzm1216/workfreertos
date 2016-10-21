@@ -1180,14 +1180,19 @@ void func_display_area_3(uint16 index,void *pvoid)
 	}
 	else if(workmode == WORK_MODE_DMR)
 		{
+#ifndef USED_SSD2119
 //		GUI_DrawArc(CZ_AREA3_TITLE1_X_START,CZ_AREA3_TITLE1_Y_START,CZ_AREA3_TITLE2_X_START,CZ_AREA3_TITLE2_Y_START,0x33);
-//	GUI_DrawBitmap((void*)&bmdown2,CZ_AREA3_FIRST_PIC_X, CZ_AREA3_FIRST_PIC_Y);
-//	GUI_DrawBitmap((void*)&bmup2,CZ_AREA3_SECOND_PIC_X, CZ_AREA3_SECOND_PIC_Y);
-//	
-//	GUI_DrawBitmap((void*)&bmdown2,CZ_AREA3_THREE_PIC_X, CZ_AREA3_THREE_PIC_Y);
-//	GUI_DrawBitmap((void*)&bmup2,CZ_AREA3_FOUR_PIC_X, CZ_AREA3_FOUR_PIC_Y);
+	GUI_DrawBitmap((void*)&bmdown2,CZ_AREA3_FIRST_PIC_X, CZ_AREA3_FIRST_PIC_Y);
+	GUI_DrawBitmap((void*)&bmup2,CZ_AREA3_SECOND_PIC_X, CZ_AREA3_SECOND_PIC_Y);
+	
+	GUI_DrawBitmap((void*)&bmdown2,CZ_AREA3_THREE_PIC_X, CZ_AREA3_THREE_PIC_Y);
+	GUI_DrawBitmap((void*)&bmup2,CZ_AREA3_FOUR_PIC_X, CZ_AREA3_FOUR_PIC_Y);
 //	GUI_DrawBitmap((void*)&bmmcx,160, 00);
-	GUI_DrawBitmap((void*)&bmbmp3e,0, 0);
+#else
+//	GUI_DrawBitmap((void*)&bmbmp3e,0, 0);
+//	GUI_DrawBitmap((void*)&bmbmp3e,0, 0);
+	GUI_DrawBitmap((void*)&bmbmp11,0, 0);
+#endif
 //	GUI_JPEG_Draw(_acmcx1,sizeof(_acmcx1),0,0);
 		}
 //	GUI_SetColor(GUI_WHITE);
@@ -1226,8 +1231,9 @@ void func_display_area_4(uint16 index,void *pvoid)
 	tmpx = fun_display_align_center(CZ_AREA4_TITLE_X_START,CZ_AREA4_TITLE_FONT_WIDTH,num,CZ_AREA4_TITLE_X_LIMIT);
 
 	tmpy = fun_display_align_center(CZ_AREA4_TITLE_Y_START,CZ_AREA4_TITLE_FONT_HEIGHT,1,CZ_AREA4_TITLE_Y_LIMIT);
-
-///////////////////	GUI_DispStringAt(CZ_AREA4_TITLE_SRTING, tmpx, tmpy);
+#ifdef USED_SSD1322_BX
+	GUI_DispStringAt(CZ_AREA4_TITLE_SRTING, tmpx, tmpy);
+#endif
 
 }
 
@@ -1246,7 +1252,7 @@ void func_display_area_5(uint16 index,void *pvoid)
 	
 	tmpx = fun_display_align_center(CZ_AREA5_TITLE_X_START,CZ_AREA5_TITLE1_FONT_WIDTH,num,CZ_AREA5_TITLE_X_LIMIT);
 	tmpy = fun_display_align_center(CZ_AREA5_TITLE_Y_START,CZ_AREA5_TITLE1_FONT_HEIGHT,1,42);
-
+#ifndef USED_SSD2119
 	chnum = Get_Comm_param_CH_No();
 	sprintf(stringtmp,"CH%003d",chnum);
 	GUI_DispStringAt(stringtmp, tmpx, tmpy);
@@ -1272,6 +1278,7 @@ void func_display_area_5(uint16 index,void *pvoid)
 	sprintf(stringtmp1,"RX=%d.%dMHZ",freq/1000,freq%1000);
 
 	GUI_DispStringAt(stringtmp1, tmpx, tmpy);
+	#endif
 
 }
 

@@ -4,13 +4,13 @@
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_18xx_43xx\config_43xx\sys_config.h
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_18xx_43xx\cmsis.h
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_common\lpc_types.h
-.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdint.h
-.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdbool.h
+.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdint.h
+.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdbool.h
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_18xx_43xx\config_43xx\cmsis_43xx.h
-.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_20\ARM\CMSIS\Include\core_cm4.h
-.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_20\ARM\CMSIS\Include\core_cmInstr.h
-.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_20\ARM\CMSIS\Include\core_cmFunc.h
-.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_20\ARM\CMSIS\Include\core_cm4_simd.h
+.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_21\ARM\CMSIS\Include\core_cm4.h
+.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_21\ARM\CMSIS\Include\core_cmInstr.h
+.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_21\ARM\CMSIS\Include\core_cmFunc.h
+.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_21\ARM\CMSIS\Include\core_cm4_simd.h
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_18xx_43xx\chip_lpc43xx.h
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_18xx_43xx\scu_18xx_43xx.h
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_18xx_43xx\clock_18xx_43xx.h
@@ -63,4 +63,4 @@
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_18xx_43xx\i2cm_18xx_43xx.h
 .\keil_output\core_m4\board_sysinit.o: ..\..\..\lpc_chip\chip_common\fpu_init.h
 .\keil_output\core_m4\board_sysinit.o: ..\..\board_common\board_api.h
-.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdio.h
+.\keil_output\core_m4\board_sysinit.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdio.h

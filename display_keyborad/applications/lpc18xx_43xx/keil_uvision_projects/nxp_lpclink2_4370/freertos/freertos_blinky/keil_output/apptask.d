@@ -2,8 +2,8 @@
 .\keil_output\apptask.o: ..\..\..\..\examples\freertos\freertos_blinky\trccom.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\ring_buffer.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h
-.\keil_output\apptask.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdint.h
-.\keil_output\apptask.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdbool.h
+.\keil_output\apptask.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdint.h
+.\keil_output\apptask.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdbool.h
 .\keil_output\apptask.o: ..\..\..\..\examples\freertos\driver\uart.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\board.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\chip.h
@@ -65,10 +65,10 @@
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\i2cm_18xx_43xx.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\fpu_init.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\lpc_core\lpc_board\board_common\board_api.h
-.\keil_output\apptask.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdio.h
+.\keil_output\apptask.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdio.h
 .\keil_output\apptask.o: ..\..\..\..\examples\freertos\driver\config.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\freertos\freertos\Source\include\FreeRTOS.h
-.\keil_output\apptask.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stddef.h
+.\keil_output\apptask.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stddef.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\freertos\freertos\Source\include\projdefs.h
 .\keil_output\apptask.o: ..\..\..\..\examples\freertos\freertos_blinky\FreeRTOSConfig.h
 .\keil_output\apptask.o: ..\..\..\..\..\..\software\freertos\freertos\Source\include\portable.h

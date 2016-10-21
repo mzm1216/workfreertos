@@ -13,6 +13,7 @@
 
   <project>
     <PathAndName>..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\lib_lpc_board_nxp_lpclink2_4370.uvproj</PathAndName>
+    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
   <project>

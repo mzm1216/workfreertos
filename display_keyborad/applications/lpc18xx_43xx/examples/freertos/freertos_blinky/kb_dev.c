@@ -679,12 +679,15 @@ void KB_OLED_App_init()
 //	Set_Main_Ctr_Icon_Dark_Bright(ICON_DARK);
 
 	/*   默认模式及频率    */
-//	kb_save_pdt_trunk_chnum(428);	//设置pdt模式、集群模式，频率编号 355
-	kb_save_dmr_repeat_chnum(2,419375,409375);
+	kb_save_pdt_trunk_chnum(428);	//设置pdt模式、集群模式，频率编号 355
+// 	kb_save_dmr_repeat_chnum(2,419375,409375);
 
 	/*	默认状态显示        */
-//	kb_save_ctr_ch_state1_main(CTR_CH_STATE_MAIN,0xB1F1);
-	kb_save_ctr_ch_state1_main(CTR_CH_STATE_IDLE,180);
-	kb_save_ctr_ch_state2_main(CTR_CH_STATE_IDLE,180);
+	kb_save_ctr_ch_state1_main(CTR_CH_STATE_MAIN,0xB1F1);
+//	kb_save_ctr_ch_state1_main(CTR_CH_STATE_IDLE,180);
+//	kb_save_ctr_ch_state2_main(CTR_CH_STATE_IDLE,180);
+
+//	sctpwm(1,40);
+
 }
 

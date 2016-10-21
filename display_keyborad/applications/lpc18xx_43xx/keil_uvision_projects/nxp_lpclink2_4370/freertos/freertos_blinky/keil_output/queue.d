@@ -1,9 +1,9 @@
 .\keil_output\queue.o: ..\..\..\..\..\..\software\freertos\freertos\Source\queue.c
-.\keil_output\queue.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdlib.h
-.\keil_output\queue.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\string.h
+.\keil_output\queue.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdlib.h
+.\keil_output\queue.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\string.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\freertos\freertos\Source\include\FreeRTOS.h
-.\keil_output\queue.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stddef.h
-.\keil_output\queue.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdint.h
+.\keil_output\queue.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stddef.h
+.\keil_output\queue.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdint.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\freertos\freertos\Source\include\projdefs.h
 .\keil_output\queue.o: ..\..\..\..\examples\freertos\freertos_blinky\FreeRTOSConfig.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\board.h
@@ -11,7 +11,7 @@
 .\keil_output\queue.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\config_43xx\sys_config.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\cmsis.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h
-.\keil_output\queue.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdbool.h
+.\keil_output\queue.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdbool.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\config_43xx\cmsis_43xx.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\CMSIS\CMSIS\Include\core_cm4.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\CMSIS\CMSIS\Include\core_cmInstr.h
@@ -69,7 +69,7 @@
 .\keil_output\queue.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\i2cm_18xx_43xx.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\fpu_init.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\lpc_core\lpc_board\board_common\board_api.h
-.\keil_output\queue.o: C:\Keil_v5_20\ARM\ARMCC\Bin\..\include\stdio.h
+.\keil_output\queue.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdio.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\freertos\freertos\Source\include\portable.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\freertos\freertos\Source\portable\RVDS\ARM_CM4F\portmacro.h
 .\keil_output\queue.o: ..\..\..\..\..\..\software\freertos\freertos\Source\include\mpu_wrappers.h
