@@ -120,6 +120,9 @@ int main(void)
 {
 	int loop = 1;
 	prvSetupHardware();
+	 Board_LED_Set(0, false);
+	 Board_LED_Set(1, true);
+	 Board_LED_Set(2, false);
 	while (loop) {
 		__WFI();
 	}

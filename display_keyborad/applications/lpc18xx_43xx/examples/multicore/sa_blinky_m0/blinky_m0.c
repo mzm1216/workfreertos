@@ -81,6 +81,7 @@ void M4_IRQHandler(void)
 		return;
 	}
 
+		 Board_LED_Set(2, false);
 	switch (msg.id.pid) {
 	case PID_BLINKY:
 		while (msg.data0) {
@@ -110,6 +111,9 @@ int main(void)
 {
 	int loop = 1;
 	prvSetupHardware();
+		 Board_LED_Set(0, false);
+	 Board_LED_Set(1, false);
+	 Board_LED_Set(2, false);
 	while (loop) {
 		__WFI();
 	}
