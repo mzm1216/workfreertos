@@ -307,7 +307,7 @@ void rt_kprintf(uint32_t flg,const char *fmt, ...)
 //   
 //	if(Get_Debug_Level()&(0x1<<flg))
 	{
-			va_start(args, fmt);
+//			va_start(args, fmt);
 			/* the return value of vsnprintf is the number of bytes that would be
 			 * written to buffer had if the size of the buffer been sufficiently
 			 * large excluding the terminating null byte. If the output string
@@ -321,7 +321,7 @@ void rt_kprintf(uint32_t flg,const char *fmt, ...)
 				bytes = uart_send_data(rt_log_buf, length);//·¢ËÍ
 //				pUART=(LPC_USART_T *)Get_TRC_Com_Dev_Uart(0);
 //				bytes = Chip_UART_SendRB(pUART, &Txring[0], rt_log_buf, length);//·¢ËÍ
-			va_end(args);
+//			va_end(args);
 	}
 }
 

@@ -175,7 +175,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>&lt;3&gt;..\..\..\..\..\..\emwin\emWin_X\GUIConf.c</Filename>
+          <Filename>D:\works\emwin\emWin_X\GUIConf.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\freertos_blinky\../../../../../../emwin/emWin_X/GUIConf.c\75</Expression>
         </Bp>
@@ -191,7 +191,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>&lt;3&gt;..\..\..\..\examples\freertos\driver\dma.c</Filename>
+          <Filename>D:\works\WorkGit\display_keyborad\examples\freertos\driver\dma.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\freertos_blinky\../../../../examples/freertos/driver/dma.c\61</Expression>
         </Bp>

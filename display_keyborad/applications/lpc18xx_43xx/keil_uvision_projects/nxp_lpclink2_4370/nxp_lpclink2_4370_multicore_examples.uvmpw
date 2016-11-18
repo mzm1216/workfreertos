@@ -9,7 +9,6 @@
 
   <project>
     <PathAndName>..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\lib_lpc_chip_43xx.uvproj</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
     <NodeIsCheckedInBatchBuild>1</NodeIsCheckedInBatchBuild>
   </project>
 
@@ -24,10 +23,13 @@
 
   <project>
     <PathAndName>..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\lib_lpc_board_nxp_lpclink2_4370_m0.uvproj</PathAndName>
+    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
   <project>
     <PathAndName>.\multicore\sa_blinky_m4\sa_blinky_m4.uvproj</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
   <project>
@@ -36,6 +38,7 @@
 
   <project>
     <PathAndName>.\multicore\sa_blinky_m0sub\sa_blinky_m0sub.uvproj</PathAndName>
+    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
 </ProjectWorkspace>

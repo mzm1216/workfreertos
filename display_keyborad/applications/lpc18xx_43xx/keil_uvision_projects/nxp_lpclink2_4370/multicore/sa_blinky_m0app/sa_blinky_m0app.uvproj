@@ -459,9 +459,9 @@
               <FilePath>..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\keil_output\core_m0\lib_lpc_chip_43xx_m0.lib</FilePath>
             </File>
             <File>
-              <FileName>lib_lpc_board_nxp_lpclink2_4370_m0.lib</FileName>
+              <FileName>lib_lpc_board_4370_m0.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\keil_output\core_m0\lib_lpc_board_nxp_lpclink2_4370_m0.lib</FilePath>
+              <FilePath>..\..\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\nxp_lpclink2_4370\keil_output\core_m0\lib_lpc_board_4370_m0.lib</FilePath>
             </File>
           </Files>
         </Group>

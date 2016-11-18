@@ -191,6 +191,9 @@ void Board_Init(void)
 
 	/* Initialize LEDs */
 	Board_LED_Init();
+	 Board_LED_Set(0, true);
+	 Board_LED_Set(1, true);
+	 Board_LED_Set(2, true);
 }
 
 /* Sets up board specific ADC interface */

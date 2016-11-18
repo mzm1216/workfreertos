@@ -374,7 +374,7 @@
               <MiscControls></MiscControls>
               <Define>CORE_M4</Define>
               <Undefine></Undefine>
-              <IncludePath>.\config_43xx;..\chip_common;.</IncludePath>
+              <IncludePath>.\config_43xx;..\chip_common;.;.\config_43xx_m0app;.\config_43xx_m0sub</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

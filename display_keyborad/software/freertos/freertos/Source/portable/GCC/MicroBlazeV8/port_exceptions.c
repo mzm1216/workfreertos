@@ -1,60 +1,64 @@
 /*
-    FreeRTOS V8.0.1 - Copyright (C) 2014 Real Time Engineers Ltd. 
+    FreeRTOS V9.0.0 - Copyright (C) 2016 Real Time Engineers Ltd.
     All rights reserved
 
     VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
-
-    ***************************************************************************
-     *                                                                       *
-     *    FreeRTOS provides completely free yet professionally developed,    *
-     *    robust, strictly quality controlled, supported, and cross          *
-     *    platform software that has become a de facto standard.             *
-     *                                                                       *
-     *    Help yourself get started quickly and support the FreeRTOS         *
-     *    project by purchasing a FreeRTOS tutorial book, reference          *
-     *    manual, or both from: http://www.FreeRTOS.org/Documentation        *
-     *                                                                       *
-     *    Thank you!                                                         *
-     *                                                                       *
-    ***************************************************************************
 
     This file is part of the FreeRTOS distribution.
 
     FreeRTOS is free software; you can redistribute it and/or modify it under
     the terms of the GNU General Public License (version 2) as published by the
-    Free Software Foundation >>!AND MODIFIED BY!<< the FreeRTOS exception.
+    Free Software Foundation >>>> AND MODIFIED BY <<<< the FreeRTOS exception.
 
+    ***************************************************************************
     >>!   NOTE: The modification to the GPL is included to allow you to     !<<
     >>!   distribute a combined work that includes FreeRTOS without being   !<<
     >>!   obliged to provide the source code for proprietary components     !<<
     >>!   outside of the FreeRTOS kernel.                                   !<<
+    ***************************************************************************
 
     FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
     WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-    FOR A PARTICULAR PURPOSE.  Full license text is available from the following
+    FOR A PARTICULAR PURPOSE.  Full license text is available on the following
     link: http://www.freertos.org/a00114.html
 
-    1 tab == 4 spaces!
-
     ***************************************************************************
      *                                                                       *
-     *    Having a problem?  Start by reading the FAQ "My application does   *
-     *    not run, what could be wrong?"                                     *
+     *    FreeRTOS provides completely free yet professionally developed,    *
+     *    robust, strictly quality controlled, supported, and cross          *
+     *    platform software that is more than just the market leader, it     *
+     *    is the industry's de facto standard.                               *
      *                                                                       *
-     *    http://www.FreeRTOS.org/FAQHelp.html                               *
+     *    Help yourself get started quickly while simultaneously helping     *
+     *    to support the FreeRTOS project by purchasing a FreeRTOS           *
+     *    tutorial book, reference manual, or both:                          *
+     *    http://www.FreeRTOS.org/Documentation                              *
      *                                                                       *
     ***************************************************************************
 
-    http://www.FreeRTOS.org - Documentation, books, training, latest versions,
-    license and Real Time Engineers Ltd. contact details.
+    http://www.FreeRTOS.org/FAQHelp.html - Having a problem?  Start by reading
+    the FAQ page "My application does not run, what could be wrong?".  Have you
+    defined configASSERT()?
+
+    http://www.FreeRTOS.org/support - In return for receiving this top quality
+    embedded software for free we request you assist our global community by
+    participating in the support forum.
+
+    http://www.FreeRTOS.org/training - Investing in training allows your team to
+    be as productive as possible as early as possible.  Now you can receive
+    FreeRTOS training directly from Richard Barry, CEO of Real Time Engineers
+    Ltd, and the world's leading authority on the world's leading RTOS.
 
     http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
     including FreeRTOS+Trace - an indispensable productivity tool, a DOS
     compatible FAT file system, and our tiny thread aware UDP/IP stack.
 
-    http://www.OpenRTOS.com - Real Time Engineers ltd license FreeRTOS to High
-    Integrity Systems to sell under the OpenRTOS brand.  Low cost OpenRTOS
-    licenses offer ticketed support, indemnification and middleware.
+    http://www.FreeRTOS.org/labs - Where new FreeRTOS products go to incubate.
+    Come and try FreeRTOS+TCP, our new open source TCP/IP stack for FreeRTOS.
+
+    http://www.OpenRTOS.com - Real Time Engineers ltd. license FreeRTOS to High
+    Integrity Systems ltd. to sell under the OpenRTOS brand.  Low cost OpenRTOS
+    licenses offer ticketed support, indemnification and commercial middleware.
 
     http://www.SafeRTOS.com - High Integrity Systems also provide a safety
     engineered and independently SIL3 certified version for use in safety and
@@ -120,10 +124,10 @@ extern void vPortExceptionHandlerEntry( void *pvExceptionID );
 
 /*-----------------------------------------------------------*/
 
-/* vApplicationExceptionRegisterDump() is a callback function that the 
+/* vApplicationExceptionRegisterDump() is a callback function that the
 application can optionally define to receive a populated xPortRegisterDump
-structure.  If the application chooses not to define a version of 
-vApplicationExceptionRegisterDump() then this weekly defined default 
+structure.  If the application chooses not to define a version of
+vApplicationExceptionRegisterDump() then this weekly defined default
 implementation will be called instead. */
 extern void vApplicationExceptionRegisterDump( xPortRegisterDump *xRegisterDump ) __attribute__((weak));
 void vApplicationExceptionRegisterDump( xPortRegisterDump *xRegisterDump )
@@ -143,11 +147,11 @@ extern void *pxCurrentTCB;
 
 	/* Fill an xPortRegisterDump structure with the MicroBlaze context as it
 	was immediately before the exception occurrence. */
-	
-	/* First fill in the name and handle of the task that was in the Running 
+
+	/* First fill in the name and handle of the task that was in the Running
 	state when the exception occurred. */
 	xRegisterDump.xCurrentTaskHandle = pxCurrentTCB;
-	xRegisterDump.pcCurrentTaskName = pcTaskGetTaskName( NULL );
+	xRegisterDump.pcCurrentTaskName = pcTaskGetName( NULL );
 
 	configASSERT( pulStackPointerOnFunctionEntry );
 
@@ -167,7 +171,7 @@ extern void *pxCurrentTCB;
 	xRegisterDump.ulR18 = pulStackPointerOnFunctionEntry[ portexR18_STACK_OFFSET ];
 	xRegisterDump.ulR19 = pulStackPointerOnFunctionEntry[ portexR19_STACK_OFFSET ];
 	xRegisterDump.ulMSR = pulStackPointerOnFunctionEntry[ portexMSR_STACK_OFFSET ];
-	
+
 	/* Obtain the value of all other registers. */
 	xRegisterDump.ulR2_small_data_area = mfgpr( R2 );
 	xRegisterDump.ulR13_read_write_small_data_area = mfgpr( R13 );
@@ -190,13 +194,13 @@ extern void *pxCurrentTCB;
 	xRegisterDump.ulEAR = mfear();
 	xRegisterDump.ulESR = mfesr();
 	xRegisterDump.ulEDR = mfedr();
-	
+
 	/* Move the saved program counter back to the instruction that was executed
 	when the exception occurred.  This is only valid for certain types of
 	exception. */
 	xRegisterDump.ulPC = xRegisterDump.ulR17_return_address_from_exceptions - portexINSTRUCTION_SIZE;
 
-	#if XPAR_MICROBLAZE_0_USE_FPU == 1
+	#if( XPAR_MICROBLAZE_USE_FPU != 0 )
 	{
 		xRegisterDump.ulFSR = mffsr();
 	}
@@ -239,19 +243,19 @@ extern void *pxCurrentTCB;
 				xRegisterDump.pcExceptionCause = ( int8_t * const ) "XEXC_ID_STACK_VIOLATION or XEXC_ID_MMU";
 				break;
 
-		#if XPAR_MICROBLAZE_0_USE_FPU == 1
+		#if( XPAR_MICROBLAZE_USE_FPU != 0 )
 
 			case XEXC_ID_FPU :
 						xRegisterDump.pcExceptionCause = ( int8_t * const ) "XEXC_ID_FPU see ulFSR value";
 						break;
 
-		#endif /* XPAR_MICROBLAZE_0_USE_FPU */
+		#endif /* XPAR_MICROBLAZE_USE_FPU */
 	}
 
-	/* vApplicationExceptionRegisterDump() is a callback function that the 
+	/* vApplicationExceptionRegisterDump() is a callback function that the
 	application can optionally define to receive the populated xPortRegisterDump
-	structure.  If the application chooses not to define a version of 
-	vApplicationExceptionRegisterDump() then the weekly defined default 
+	structure.  If the application chooses not to define a version of
+	vApplicationExceptionRegisterDump() then the weekly defined default
 	implementation within this file will be called instead. */
 	vApplicationExceptionRegisterDump( &xRegisterDump );
 
@@ -271,46 +275,48 @@ static uint32_t ulHandlersAlreadyInstalled = pdFALSE;
 	{
 		ulHandlersAlreadyInstalled = pdTRUE;
 
-		#if XPAR_MICROBLAZE_0_UNALIGNED_EXCEPTIONS == 1
+		#if XPAR_MICROBLAZE_UNALIGNED_EXCEPTIONS == 1
 			microblaze_register_exception_handler( XEXC_ID_UNALIGNED_ACCESS, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_UNALIGNED_ACCESS );
-		#endif /* XPAR_MICROBLAZE_0_UNALIGNED_EXCEPTIONS*/
+		#endif /* XPAR_MICROBLAZE_UNALIGNED_EXCEPTIONS*/
 
-		#if XPAR_MICROBLAZE_0_ILL_OPCODE_EXCEPTION == 1
+		#if XPAR_MICROBLAZE_ILL_OPCODE_EXCEPTION == 1
 			microblaze_register_exception_handler( XEXC_ID_ILLEGAL_OPCODE, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_ILLEGAL_OPCODE );
-		#endif /* XPAR_MICROBLAZE_0_ILL_OPCODE_EXCEPTION*/
+		#endif /* XPAR_MICROBLAZE_ILL_OPCODE_EXCEPTION */
 
-		#if XPAR_MICROBLAZE_0_M_AXI_I_BUS_EXCEPTION == 1
+		#if XPAR_MICROBLAZE_M_AXI_I_BUS_EXCEPTION == 1
 			microblaze_register_exception_handler( XEXC_ID_M_AXI_I_EXCEPTION, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_M_AXI_I_EXCEPTION );
-		#endif /* XPAR_MICROBLAZE_0_M_AXI_I_BUS_EXCEPTION*/
+		#endif /* XPAR_MICROBLAZE_M_AXI_I_BUS_EXCEPTION */
 
-		#if XPAR_MICROBLAZE_0_M_AXI_D_BUS_EXCEPTION == 1
+		#if XPAR_MICROBLAZE_M_AXI_D_BUS_EXCEPTION == 1
 			microblaze_register_exception_handler( XEXC_ID_M_AXI_D_EXCEPTION, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_M_AXI_D_EXCEPTION );
-		#endif /* XPAR_MICROBLAZE_0_M_AXI_D_BUS_EXCEPTION*/
+		#endif /* XPAR_MICROBLAZE_M_AXI_D_BUS_EXCEPTION */
 
-		#if XPAR_MICROBLAZE_0_IPLB_BUS_EXCEPTION == 1
+		#if XPAR_MICROBLAZE_IPLB_BUS_EXCEPTION == 1
 			microblaze_register_exception_handler( XEXC_ID_IPLB_EXCEPTION, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_IPLB_EXCEPTION );
-		#endif /* XPAR_MICROBLAZE_0_IPLB_BUS_EXCEPTION*/
+		#endif /* XPAR_MICROBLAZE_IPLB_BUS_EXCEPTION */
 
-		#if XPAR_MICROBLAZE_0_DPLB_BUS_EXCEPTION == 1
+		#if XPAR_MICROBLAZE_DPLB_BUS_EXCEPTION == 1
 			microblaze_register_exception_handler( XEXC_ID_DPLB_EXCEPTION, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_DPLB_EXCEPTION );
-		#endif /* XPAR_MICROBLAZE_0_DPLB_BUS_EXCEPTION*/
+		#endif /* XPAR_MICROBLAZE_DPLB_BUS_EXCEPTION */
 
-		#if XPAR_MICROBLAZE_0_DIV_ZERO_EXCEPTION == 1
+		#if XPAR_MICROBLAZE_DIV_ZERO_EXCEPTION == 1
 			microblaze_register_exception_handler( XEXC_ID_DIV_BY_ZERO, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_DIV_BY_ZERO );
-		#endif /* XPAR_MICROBLAZE_0_DIV_ZERO_EXCEPTION*/
+		#endif /* XPAR_MICROBLAZE_DIV_ZERO_EXCEPTION */
 
-		#if XPAR_MICROBLAZE_0_FPU_EXCEPTION == 1
+		#if XPAR_MICROBLAZE_FPU_EXCEPTION == 1
 			microblaze_register_exception_handler( XEXC_ID_FPU, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_FPU );
-		#endif /* XPAR_MICROBLAZE_0_FPU_EXCEPTION*/
+		#endif /* XPAR_MICROBLAZE_FPU_EXCEPTION */
 
-		#if XPAR_MICROBLAZE_0_FSL_EXCEPTION == 1
+		#if XPAR_MICROBLAZE_FSL_EXCEPTION == 1
 			microblaze_register_exception_handler( XEXC_ID_FSL, vPortExceptionHandlerEntry, ( void * ) XEXC_ID_FSL );
-		#endif /* XPAR_MICROBLAZE_0_FSL_EXCEPTION*/
+		#endif /* XPAR_MICROBLAZE_FSL_EXCEPTION */
+
+		microblaze_enable_exceptions();
 	}
 }
 
 /* Exclude the entire file if the MicroBlaze is not configured to handle
-exceptions, or the application defined configuration item 
+exceptions, or the application defined configuration item
 configINSTALL_EXCEPTION_HANDLERS is not set to 1. */
 #endif /* ( MICROBLAZE_EXCEPTIONS_ENABLED == 1 ) && ( configINSTALL_EXCEPTION_HANDLERS == 1 ) */
 

@@ -1,5 +1,5 @@
 .\keil_output\heartstep1.o: F:\works\同事\蒋蕾\新建文件夹111\新建文件夹\heart单色最终版\heartstep1.c
-.\keil_output\heartstep1.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdlib.h
+.\keil_output\heartstep1.o: C:\Prog\ARM\ADSv1_2\INCLUDE\stdlib.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\emwin\emWin_header\GUI.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\emwin\emWin_header\GUI_ConfDefaults.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\emwin\emWin_X\GUIConf.h
@@ -11,8 +11,8 @@
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\config_43xx\sys_config.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\cmsis.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h
-.\keil_output\heartstep1.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdint.h
-.\keil_output\heartstep1.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdbool.h
+.\keil_output\heartstep1.o: C:\Prog\ARM\ADSv1_2\INCLUDE\stdint.h
+.\keil_output\heartstep1.o: ..\..\..\..\examples\freertos\freertos_blinky\stdbool.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\config_43xx\cmsis_43xx.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\CMSIS\CMSIS\Include\core_cm4.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\CMSIS\CMSIS\Include\core_cmInstr.h
@@ -70,6 +70,6 @@
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\i2cm_18xx_43xx.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\lpc_core\lpc_chip\chip_common\fpu_init.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\software\lpc_core\lpc_board\board_common\board_api.h
-.\keil_output\heartstep1.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdio.h
+.\keil_output\heartstep1.o: C:\Prog\ARM\ADSv1_2\INCLUDE\stdio.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\emwin\emWin_header\Global.h
 .\keil_output\heartstep1.o: ..\..\..\..\..\..\emwin\emWin_header\GUI_Version.h

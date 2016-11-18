@@ -4,8 +4,8 @@
 .\keil_output\core_m4\board.o: ..\..\..\lpc_chip\chip_18xx_43xx\config_43xx\sys_config.h
 .\keil_output\core_m4\board.o: ..\..\..\lpc_chip\chip_18xx_43xx\cmsis.h
 .\keil_output\core_m4\board.o: ..\..\..\lpc_chip\chip_common\lpc_types.h
-.\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdint.h
-.\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdbool.h
+.\keil_output\core_m4\board.o: C:\Prog\ARM\ADSv1_2\INCLUDE\stdint.h
+.\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\ARMCC\include\stdbool.h
 .\keil_output\core_m4\board.o: ..\..\..\lpc_chip\chip_18xx_43xx\config_43xx\cmsis_43xx.h
 .\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\CMSIS\Include\core_cm4.h
 .\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\CMSIS\Include\core_cmInstr.h
@@ -63,8 +63,7 @@
 .\keil_output\core_m4\board.o: ..\..\..\lpc_chip\chip_18xx_43xx\i2cm_18xx_43xx.h
 .\keil_output\core_m4\board.o: ..\..\..\lpc_chip\chip_common\fpu_init.h
 .\keil_output\core_m4\board.o: ..\..\board_common\board_api.h
-.\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stdio.h
-.\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\string.h
+.\keil_output\core_m4\board.o: C:\Prog\ARM\ADSv1_2\INCLUDE\stdio.h
+.\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\ARMCC\include\string.h
 .\keil_output\core_m4\board.o: ..\..\board_common\retarget.h
-.\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\rt_misc.h
-.\keil_output\core_m4\board.o: C:\Keil_v5_21\ARM\ARMCC\Bin\..\include\stddef.h
+.\keil_output\core_m4\board.o: C:\Prog\ARM\ADSv1_2\INCLUDE\rt_misc.h
